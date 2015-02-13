@@ -9,3 +9,6 @@ This image is built automaticly on docker hub. And as it is based on `assemblyli
 
 * Current - 0.12.0
 `docker pull assemblyline/nodejs:0.12.0`
+
+* Previous - 0.10.36
+`docker pull assemblyline/nodejs:0.10.36`
