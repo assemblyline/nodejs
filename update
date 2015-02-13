@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'erb'
+require 'fileutils'
+
+def build_file(version, file, checksum)
+  File.write("#{version}/#{file}", ERB.new(File.read("template/#{file}.erb")).result(binding))
+end
+
+def build_files(version, checksum)
+  FileUtils.mkdir_p(version)
+  %w(Dockerfile SHASUMS256.txt).each do |file|
+    build_file(version, file, checksum)
+  end
+end
+
+{
+  '0.12.0' => '3bdb7267ca7ee24ac59c54ae146741f70a6ae3a8a8afd42d06204647fe9d4206'
+}.each do |version, checksum|
+  build_files(version, checksum)
+end
