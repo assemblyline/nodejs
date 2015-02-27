@@ -3,19 +3,30 @@ require 'erb'
 require 'fileutils'
 
 def build_file(version, file, checksum)
-  File.write("#{version}/#{file}", ERB.new(File.read("template/#{file}.erb")).result(binding))
+  File.write(file, ERB.new(File.read("template/#{file}.erb")).result(binding))
 end
 
 def build_files(version, checksum)
-  FileUtils.mkdir_p(version)
+  `git checkout master`
+  `git branch -d #{version}`
+  `git checkout -b #{version}`
   %w(Dockerfile SHASUMS256.txt).each do |file|
     build_file(version, file, checksum)
   end
+  `git add .`
+  `git commit --amend --no-edit`
 end
 
-{
+VERSIONS = {
   '0.12.0' => '3bdb7267ca7ee24ac59c54ae146741f70a6ae3a8a8afd42d06204647fe9d4206',
   '0.10.36' => '2bc13477684a9fe534bdc9d8f4a8caf6257a11953b57c42cad9b919ee259a0d5',
-}.each do |version, checksum|
-  build_files(version, checksum)
+}
+
+if ARGV[0]
+  fail unless VERSIONS[ARGV[0]]
+  build_files(ARGV[0],VERSIONS[ARGV[0]])
+else
+  VERSIONS.each do |version, checksum|
+    build_files(version, checksum)
+  end
 end
