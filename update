@@ -2,6 +2,12 @@
 require 'erb'
 require 'fileutils'
 
+VERSIONS = {
+  '0.12.0' => '3bdb7267ca7ee24ac59c54ae146741f70a6ae3a8a8afd42d06204647fe9d4206',
+  '0.10.36' => '2bc13477684a9fe534bdc9d8f4a8caf6257a11953b57c42cad9b919ee259a0d5',
+}
+NPM_VERSION = '2.6.1'
+
 def build_file(version, file, checksum)
   File.write(file, ERB.new(File.read("template/#{file}.erb")).result(binding))
 end
@@ -17,10 +23,6 @@ def build_files(version, checksum)
   `git commit --amend --no-edit`
 end
 
-VERSIONS = {
-  '0.12.0' => '3bdb7267ca7ee24ac59c54ae146741f70a6ae3a8a8afd42d06204647fe9d4206',
-  '0.10.36' => '2bc13477684a9fe534bdc9d8f4a8caf6257a11953b57c42cad9b919ee259a0d5',
-}
 
 if ARGV[0]
   fail unless VERSIONS[ARGV[0]]
