@@ -5,6 +5,7 @@ require 'fileutils'
 VERSIONS = {
   '0.12.0' => '3bdb7267ca7ee24ac59c54ae146741f70a6ae3a8a8afd42d06204647fe9d4206',
   '0.10.36' => '2bc13477684a9fe534bdc9d8f4a8caf6257a11953b57c42cad9b919ee259a0d5',
+  '4.2.1' => 'e766e387934e17daaad92d0460ed76f756655da62b627a5c9cc07faea4a0b824',
 }
 NPM_VERSION = '2.7.3'
 

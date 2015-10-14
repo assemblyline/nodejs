@@ -6,9 +6,11 @@ Based on `quay.io/assemblyline/buildpack_deps`, this image should include everyt
 This image is built automaticly on quay.io. And as it is based on `quay.io/assemblyline/buildpack_deps` should automaticly get any package updates that are needed.
 
 ### Suported Versions
+* Current - 4.2.1
+`docker pull quay.io/assemblyline/nodejs:4.2.1`
 
-* Current - 0.12.0
+* Previous - 0.12.0
 `docker pull quay.io/assemblyline/nodejs:0.12.0`
 
-* Previous - 0.10.36
+* Old - 0.10.36
 `docker pull quay.io/assemblyline/nodejs:0.10.36`
