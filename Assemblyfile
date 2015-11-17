@@ -1,0 +1,18 @@
+[component]
+name = 'Node.js'
+repo = 'quay.io/assemblyline/nodejs'
+
+[[version]]
+version = '4.2.2'
+checksum =  '5c39fac55c945be3b8ac381a12bdbe3a64a9bdc5376d27e2ce0c72160eff5942'
+npm_version = '3.4.0'
+
+[[version]]
+version = '0.12.7'
+checksum =  '6a2b3077f293d17e2a1e6dba0297f761c9e981c255a2c82f329d4173acf9b9d5'
+npm_version = '3.4.0'
+
+[[version]]
+version = '0.10.40'
+checksum =  '0bb15c00fc4668ce3dc1a70a84b80b1aaaaea61ad7efe05dd4eb91165620a17e'
+npm_version = '3.4.0'
