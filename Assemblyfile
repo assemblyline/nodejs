@@ -3,6 +3,11 @@ name = 'Node.js'
 repo = 'quay.io/assemblyline/nodejs'
 
 [[version]]
+version = '5.0.0'
+checksum =  'ef73b59048a0ed11d01633f0061627b7a9879257deb9add2255e4d0808f8b671'
+npm_version = '3.4.0'
+
+[[version]]
 version = '4.2.2'
 checksum =  '5c39fac55c945be3b8ac381a12bdbe3a64a9bdc5376d27e2ce0c72160eff5942'
 npm_version = '3.4.0'
