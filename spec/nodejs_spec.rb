@@ -17,6 +17,14 @@ describe 'Node.js' do
     expect(node_version).to eq '0.10.42'
   end
 
+  it 'installs npm version 3.7.3' do
+    expect(npm_version).to eq '3.7.3'
+  end
+
+  def npm_version
+    command('npm -v').stdout.chomp
+  end
+
   def node_version
     command('node -v').stdout.chomp[1..-1]
   end
