@@ -8,21 +8,16 @@ checksum =  'ce46dd0188181b70661b9162feffdbd8a860cb75cb6661c37d6d61982e3f72c5'
 npm_version = '3.8.9'
 
 [[version]]
-version = '5.10.1'
-checksum =  '897506e1e83cba9b780b030c9cc7299b0ae8872c0b8b0081a86996079025cea5'
+version = '5.11.1'
+checksum =  'd8e30e79a1e4ad56f55ef59facdf913c950e9664528f59f4388e85fdd899dfde'
 npm_version = '3.8.9'
 
 [[version]]
-version = '4.4.2'
-checksum =  'b4a44dbe528520397621aad76168bdfd50cdb96fb1f15e993.8.93f6400c33d2'
+version = '4.4.4'
+checksum =  '0881eb010c8a4a0e746a1852fe48416d9c21b5f19a20d418cb02c7197fa55576'
 npm_version = '3.8.9'
 
 [[version]]
-version = '0.12.13'
-checksum =  '3.8.9ee32fc9a726bfe6f3961bcccf3d2b6d0ddd68326abb4434039f16e10f09'
-npm_version = '3.8.9'
-
-[[version]]
-version = '0.10.44'
-checksum =  'b5f4acc54e5527d793463e05b5435f11dd1f0997168aa71d53a1ff1a06c7b144'
+version = '0.12.14'
+checksum =  '0f1f20f6989d32b4b67835f527ae3bf165c1c4a6a7dc3961d489288817956bae'
 npm_version = '3.8.9'
