@@ -3,21 +3,26 @@ name = 'Node.js'
 repo = 'quay.io/assemblyline/nodejs'
 
 [[version]]
+version = '6.1.0'
+checksum =  'ce46dd0188181b70661b9162feffdbd8a860cb75cb6661c37d6d61982e3f72c5'
+npm_version = '3.8.9'
+
+[[version]]
 version = '5.10.1'
 checksum =  '897506e1e83cba9b780b030c9cc7299b0ae8872c0b8b0081a86996079025cea5'
-npm_version = '3.8.6'
+npm_version = '3.8.9'
 
 [[version]]
 version = '4.4.2'
-checksum =  'b4a44dbe528520397621aad76168bdfd50cdb96fb1f15e99358263f6400c33d2'
-npm_version = '3.8.6'
+checksum =  'b4a44dbe528520397621aad76168bdfd50cdb96fb1f15e993.8.93f6400c33d2'
+npm_version = '3.8.9'
 
 [[version]]
 version = '0.12.13'
-checksum =  '3e8b6ee32fc9a726bfe6f3961bcccf3d2b6d0ddd68326abb4434039f16e10f09'
-npm_version = '3.8.6'
+checksum =  '3.8.9ee32fc9a726bfe6f3961bcccf3d2b6d0ddd68326abb4434039f16e10f09'
+npm_version = '3.8.9'
 
 [[version]]
 version = '0.10.44'
 checksum =  'b5f4acc54e5527d793463e05b5435f11dd1f0997168aa71d53a1ff1a06c7b144'
-npm_version = '3.8.6'
+npm_version = '3.8.9'
