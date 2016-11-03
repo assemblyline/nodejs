@@ -1,24 +1,28 @@
 require 'serverspec'
 
 describe 'Node.js' do
-  it 'installs version 6.1.0', :'6.1.0' do
-    expect(node_version).to eq '6.1.0'
+  it 'installs version 7.0.0', :'7.0.0' do
+    expect(node_version).to eq '7.0.0'
   end
 
-  it 'installs version 5.11.1', :'5.11.1' do
-    expect(node_version).to eq '5.11.1'
+  it 'installs version 6.9.1', :'6.9.1' do
+    expect(node_version).to eq '6.9.1'
   end
 
-  it 'installs version 4.4.4', :'4.4.4' do
-    expect(node_version).to eq '4.4.4'
+  it 'installs version 5.12.0', :'5.12.0' do
+    expect(node_version).to eq '5.12.0'
   end
 
-  it 'installs version 0.12.14', :'0.12.14' do
-    expect(node_version).to eq '0.12.14'
+  it 'installs version 4.6.1', :'4.6.1' do
+    expect(node_version).to eq '4.6.1'
   end
 
-  it 'installs npm version 3.8.9' do
-    expect(npm_version).to eq '3.8.9'
+  it 'installs version 0.12.17', :'0.12.17' do
+    expect(node_version).to eq '0.12.17'
+  end
+
+  it 'installs npm version 3.10.9' do
+    expect(npm_version).to eq '3.10.9'
   end
 
   def npm_version
