@@ -21,8 +21,8 @@ describe 'Node.js' do
     expect(node_version).to eq '0.12.17'
   end
 
-  it 'installs npm version 3.10.9' do
-    expect(npm_version).to eq '3.10.9'
+  it 'installs npm version 3.10.7' do
+    expect(npm_version).to eq '3.10.7'
   end
 
   def npm_version

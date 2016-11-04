@@ -5,24 +5,24 @@ repo = 'quay.io/assemblyline/nodejs'
 [[version]]
 version = '7.0.0'
 checksum =  '4bc5ce31d2485f0b25e55bf8691d5dabf72c61f0c06b363728b70bfc0292ce7f'
-npm_version = '3.10.9'
+npm_version = '3.10.7'
 
 [[version]]
 version = '6.9.1'
 checksum =  'a9d9e6308931fa2a2b0cada070516d45b76d752430c31c9198933c78f8d54b17'
-npm_version = '3.10.9'
+npm_version = '3.10.7'
 
 [[version]]
 version = '5.12.0'
 checksum =  'c0f459152aa87aba8a019a95899352170db0d8d52c860715c88356cb253fe2c4'
-npm_version = '3.10.9'
+npm_version = '3.10.7'
 
 [[version]]
 version = '4.6.1'
 checksum =  '033243d4ddffd67856c9ccfb512b0d1980e8d1373554bc328472b21bc5de7675'
-npm_version = '3.10.9'
+npm_version = '3.10.7'
 
 [[version]]
 version = '0.12.17'
 checksum =  'afeec47fc543e24a1e596d05e9bc8e019c3bdf51d45f0ddeac6aeb04f15eaece'
-npm_version = '3.10.9'
+npm_version = '3.10.7'
