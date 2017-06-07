@@ -7,4 +7,4 @@ RUN curl -SLO "http://nodejs.org/dist/v<%= data['version'] %>/node-v<%= data['ve
       && echo "<%= data['checksum'] %> node-v<%= data['version'] %>-linux-x64.tar.gz" | sha256sum -c - \
       && tar -xzf "node-v<%= data['version'] %>-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
       && npm install -g npm@<%= data['npm_version'] %> \
-      && npm cache clear
+      && npm cache clear --force
